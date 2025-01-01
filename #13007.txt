@@ -1,0 +1,459 @@
+﻿2025-01-01T01:23:19.9779029Z Current runner version: '2.321.0'
+2025-01-01T01:23:19.9803800Z ##[group]Operating System
+2025-01-01T01:23:19.9804573Z Ubuntu
+2025-01-01T01:23:19.9805172Z 24.04.1
+2025-01-01T01:23:19.9805686Z LTS
+2025-01-01T01:23:19.9806122Z ##[endgroup]
+2025-01-01T01:23:19.9806734Z ##[group]Runner Image
+2025-01-01T01:23:19.9807308Z Image: ubuntu-24.04
+2025-01-01T01:23:19.9807766Z Version: 20241215.1.0
+2025-01-01T01:23:19.9808867Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20241215.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-01-01T01:23:19.9810237Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20241215.1
+2025-01-01T01:23:19.9811363Z ##[endgroup]
+2025-01-01T01:23:19.9811896Z ##[group]Runner Image Provisioner
+2025-01-01T01:23:19.9812489Z 2.0.404.1
+2025-01-01T01:23:19.9812991Z ##[endgroup]
+2025-01-01T01:23:19.9814024Z ##[group]GITHUB_TOKEN Permissions
+2025-01-01T01:23:19.9815782Z Contents: read
+2025-01-01T01:23:19.9816441Z Metadata: read
+2025-01-01T01:23:19.9817132Z Pages: read
+2025-01-01T01:23:19.9817759Z ##[endgroup]
+2025-01-01T01:23:19.9819812Z Secret source: Actions
+2025-01-01T01:23:19.9820475Z Prepare workflow directory
+2025-01-01T01:23:20.0291501Z Prepare all required actions
+2025-01-01T01:23:20.0327861Z Getting action download info
+2025-01-01T01:23:20.2282466Z Download action repository 'Homebrew/actions@master' (SHA:318a1900ed273bea3ec1f4e4baa30aebb9c7f85a)
+2025-01-01T01:23:20.7956135Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2025-01-01T01:23:20.8326622Z Download action repository 'ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4' (SHA:4a9ddd6f338a97768b8006bf671dfbad383215f4)
+2025-01-01T01:23:21.0921704Z Complete job name: docs
+2025-01-01T01:23:21.1683462Z ##[group]Run Homebrew/actions/setup-homebrew@master
+2025-01-01T01:23:21.1685466Z with:
+2025-01-01T01:23:21.1686091Z   core: false
+2025-01-01T01:23:21.1686513Z   cask: false
+2025-01-01T01:23:21.1686914Z   test-bot: false
+2025-01-01T01:23:21.1687384Z   debug: false
+2025-01-01T01:23:21.1688051Z   brew-gh-api-token: ***
+2025-01-01T01:23:21.1688531Z   stable: false
+2025-01-01T01:23:21.1689252Z env:
+2025-01-01T01:23:21.1689663Z   HOMEBREW_DEVELOPER: 1
+2025-01-01T01:23:21.1690134Z   HOMEBREW_NO_AUTO_UPDATE: 1
+2025-01-01T01:23:21.1690640Z   HOMEBREW_NO_ENV_HINTS: 1
+2025-01-01T01:23:21.1691544Z   HOMEBREW_BOOTSNAP: 1
+2025-01-01T01:23:21.1692045Z   HOMEBREW_NO_INSTALL_CLEANUP: 1
+2025-01-01T01:23:21.1692558Z ##[endgroup]
+2025-01-01T01:23:21.3799223Z [command]/bin/bash /home/runner/work/_actions/Homebrew/actions/master/setup-homebrew/main.sh false false false false  false ***
+2025-01-01T01:23:21.4898921Z [34m==>[0m [1mFetching Homebrew/brew...[0m
+2025-01-01T01:23:26.3289768Z From https://github.com/Homebrew/brew
+2025-01-01T01:23:26.3291634Z  * branch                  5df9794b2d8aef97eae56ddac2ebab465d08d587 -> FETCH_HEAD
+2025-01-01T01:23:26.3357341Z  + ed30ba75bb...378ff7c066 feat/cask/font_install -> origin/feat/cask/font_install  (forced update)
+2025-01-01T01:23:26.3359368Z  * [new branch]            github_runner_matrix-restore-linux-timeout -> origin/github_runner_matrix-restore-linux-timeout
+2025-01-01T01:23:26.3361382Z  * [new branch]            livecheck-skip-autobumped-formulae -> origin/livecheck-skip-autobumped-formulae
+2025-01-01T01:23:26.3457954Z    3001afe881..e9b0285c14  master                 -> origin/master
+2025-01-01T01:23:26.3461030Z  * [new branch]            reduce-opportunistic-linkage -> origin/reduce-opportunistic-linkage
+2025-01-01T01:23:26.3462907Z  * [new branch]            sorbet-ignore-vendor-ruby-dir -> origin/sorbet-ignore-vendor-ruby-dir
+2025-01-01T01:23:26.3468800Z  * [new tag]               4.4.12                 -> 4.4.12
+2025-01-01T01:23:26.3470378Z  * [new tag]               4.4.13                 -> 4.4.13
+2025-01-01T01:23:26.3472434Z  * [new tag]               4.4.14                 -> 4.4.14
+2025-01-01T01:23:26.4599840Z origin/HEAD set to master
+2025-01-01T01:23:26.8551985Z Switched to and reset branch 'master'
+2025-01-01T01:23:26.8558325Z Your branch is ahead of 'origin/master' by 2 commits.
+2025-01-01T01:23:26.8559120Z   (use "git push" to publish your local commits)
+2025-01-01T01:23:26.8570460Z /home/runner/work/brew/brew
+2025-01-01T01:23:26.8575662Z [34m==>[0m [1mbrew update --auto-update[0m
+2025-01-01T01:23:27.1068093Z Checking if we need to fetch /home/linuxbrew/.linuxbrew/Homebrew...
+2025-01-01T01:23:27.1188913Z Checking if we need to fetch formula.jws.json...
+2025-01-01T01:23:27.3719356Z Updated formula.jws.json.
+2025-01-01T01:23:27.3720129Z Checking if we need to fetch cask.jws.json...
+2025-01-01T01:23:27.4464035Z Updated cask.jws.json.
+2025-01-01T01:23:27.4464645Z Checking if we need to fetch formula_tap_migrations.jws.json...
+2025-01-01T01:23:27.4842335Z Updated formula_tap_migrations.jws.json.
+2025-01-01T01:23:27.4843816Z Checking if we need to fetch cask_tap_migrations.jws.json...
+2025-01-01T01:23:27.5195821Z Updated cask_tap_migrations.jws.json.
+2025-01-01T01:23:28.9716310Z [34m==>[0m [1mHomebrew collects anonymous analytics.[0m
+2025-01-01T01:23:28.9718201Z [1mRead the analytics documentation (and how to opt-out) here:
+2025-01-01T01:23:28.9727506Z   [4mhttps://docs.brew.sh/Analytics[24m[0m
+2025-01-01T01:23:28.9728272Z No analytics have been recorded yet (nor will be during this `brew` run).
+2025-01-01T01:23:28.9728807Z 
+2025-01-01T01:23:28.9880468Z [34m==>[0m [1mHomebrew is run entirely by unpaid volunteers. Please consider donating:[0m
+2025-01-01T01:23:28.9881715Z   [4mhttps://github.com/Homebrew/brew#donations[24m
+2025-01-01T01:23:28.9882144Z 
+2025-01-01T01:23:30.1507224Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+2025-01-01T01:23:30.1507595Z with:
+2025-01-01T01:23:30.1507785Z   persist-credentials: false
+2025-01-01T01:23:30.1508017Z   repository: Homebrew/brew
+2025-01-01T01:23:30.1508345Z   token: ***
+2025-01-01T01:23:30.1508514Z   ssh-strict: true
+2025-01-01T01:23:30.1508700Z   ssh-user: git
+2025-01-01T01:23:30.1508892Z   clean: true
+2025-01-01T01:23:30.1509110Z   sparse-checkout-cone-mode: true
+2025-01-01T01:23:30.1509354Z   fetch-depth: 1
+2025-01-01T01:23:30.1509557Z   fetch-tags: false
+2025-01-01T01:23:30.1509749Z   show-progress: true
+2025-01-01T01:23:30.1509939Z   lfs: false
+2025-01-01T01:23:30.1510104Z   submodules: false
+2025-01-01T01:23:30.1510299Z   set-safe-directory: true
+2025-01-01T01:23:30.1510505Z env:
+2025-01-01T01:23:30.1510660Z   HOMEBREW_DEVELOPER: 1
+2025-01-01T01:23:30.1510861Z   HOMEBREW_NO_AUTO_UPDATE: 1
+2025-01-01T01:23:30.1511284Z   HOMEBREW_NO_ENV_HINTS: 1
+2025-01-01T01:23:30.1511533Z   HOMEBREW_BOOTSNAP: 1
+2025-01-01T01:23:30.1511732Z   HOMEBREW_NO_INSTALL_CLEANUP: 1
+2025-01-01T01:23:30.1511954Z   HOMEBREW_NO_INSTALL_FROM_API: 
+2025-01-01T01:23:30.1512309Z   HOMEBREW_GITHUB_API_TOKEN: ***
+2025-01-01T01:23:30.1512527Z ##[endgroup]
+2025-01-01T01:23:30.2549732Z Syncing repository: Homebrew/brew
+2025-01-01T01:23:30.2551842Z ##[group]Getting Git version info
+2025-01-01T01:23:30.2552417Z Working directory is '/home/runner/work/brew/brew'
+2025-01-01T01:23:30.2553307Z [command]/usr/bin/git version
+2025-01-01T01:23:30.2563413Z git version 2.47.1
+2025-01-01T01:23:30.2591802Z ##[endgroup]
+2025-01-01T01:23:30.2606619Z Temporarily overriding HOME='/home/runner/work/_temp/203ab4ea-c41c-4fc9-9e27-c75f9dcfd0b0' before making global git config changes
+2025-01-01T01:23:30.2607628Z Adding repository directory to the temporary git global config as a safe directory
+2025-01-01T01:23:30.2611879Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/brew/brew
+2025-01-01T01:23:30.2641736Z Deleting the contents of '/home/runner/work/brew/brew'
+2025-01-01T01:23:30.2645542Z ##[group]Initializing the repository
+2025-01-01T01:23:30.2649488Z [command]/usr/bin/git init /home/runner/work/brew/brew
+2025-01-01T01:23:30.2729930Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-01-01T01:23:30.2730737Z hint: is subject to change. To configure the initial branch name to use in all
+2025-01-01T01:23:30.2731898Z hint: of your new repositories, which will suppress this warning, call:
+2025-01-01T01:23:30.2732489Z hint:
+2025-01-01T01:23:30.2732871Z hint: 	git config --global init.defaultBranch <name>
+2025-01-01T01:23:30.2733333Z hint:
+2025-01-01T01:23:30.2733771Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-01-01T01:23:30.2734551Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-01-01T01:23:30.2735134Z hint:
+2025-01-01T01:23:30.2735420Z hint: 	git branch -m <name>
+2025-01-01T01:23:30.2735968Z Initialized empty Git repository in /home/runner/work/brew/brew/.git/
+2025-01-01T01:23:30.2743308Z [command]/usr/bin/git remote add origin https://github.com/Homebrew/brew
+2025-01-01T01:23:30.2772953Z ##[endgroup]
+2025-01-01T01:23:30.2773553Z ##[group]Disabling automatic garbage collection
+2025-01-01T01:23:30.2777405Z [command]/usr/bin/git config --local gc.auto 0
+2025-01-01T01:23:30.2805783Z ##[endgroup]
+2025-01-01T01:23:30.2806415Z ##[group]Setting up auth
+2025-01-01T01:23:30.2813559Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-01-01T01:23:30.2843444Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-01-01T01:23:30.3083752Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-01-01T01:23:30.3113095Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-01-01T01:23:30.3343742Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-01-01T01:23:30.3378873Z ##[endgroup]
+2025-01-01T01:23:30.3379379Z ##[group]Fetching the repository
+2025-01-01T01:23:30.3387189Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5df9794b2d8aef97eae56ddac2ebab465d08d587:refs/remotes/pull/19023/merge
+2025-01-01T01:23:30.9756158Z From https://github.com/Homebrew/brew
+2025-01-01T01:23:30.9756752Z  * [new ref]         5df9794b2d8aef97eae56ddac2ebab465d08d587 -> pull/19023/merge
+2025-01-01T01:23:30.9779258Z ##[endgroup]
+2025-01-01T01:23:30.9780094Z ##[group]Determining the checkout info
+2025-01-01T01:23:30.9782068Z ##[endgroup]
+2025-01-01T01:23:30.9787246Z [command]/usr/bin/git sparse-checkout disable
+2025-01-01T01:23:30.9825901Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-01-01T01:23:30.9853194Z ##[group]Checking out the ref
+2025-01-01T01:23:30.9857461Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/19023/merge
+2025-01-01T01:23:31.1330507Z Note: switching to 'refs/remotes/pull/19023/merge'.
+2025-01-01T01:23:31.1331556Z 
+2025-01-01T01:23:31.1332095Z You are in 'detached HEAD' state. You can look around, make experimental
+2025-01-01T01:23:31.1332879Z changes and commit them, and you can discard any commits you make in this
+2025-01-01T01:23:31.1333346Z state without impacting any branches by switching back to a branch.
+2025-01-01T01:23:31.1333611Z 
+2025-01-01T01:23:31.1333795Z If you want to create a new branch to retain commits you create, you may
+2025-01-01T01:23:31.1334215Z do so (now or later) by using -c with the switch command. Example:
+2025-01-01T01:23:31.1334451Z 
+2025-01-01T01:23:31.1334552Z   git switch -c <new-branch-name>
+2025-01-01T01:23:31.1334834Z 
+2025-01-01T01:23:31.1334985Z Or undo this operation with:
+2025-01-01T01:23:31.1335255Z 
+2025-01-01T01:23:31.1335382Z   git switch -
+2025-01-01T01:23:31.1335558Z 
+2025-01-01T01:23:31.1335880Z Turn off this advice by setting config variable advice.detachedHead to false
+2025-01-01T01:23:31.1336337Z 
+2025-01-01T01:23:31.1336883Z HEAD is now at 5df9794 Merge 4ff6ac09c2a951995605a23965a62484ea3bf2ed into e9b0285c14c77fb2ed22ad831bb727ee9ae5abd7
+2025-01-01T01:23:31.1343542Z ##[endgroup]
+2025-01-01T01:23:31.1434056Z [command]/usr/bin/git log -1 --format=%H
+2025-01-01T01:23:31.1456012Z 5df9794b2d8aef97eae56ddac2ebab465d08d587
+2025-01-01T01:23:31.1465943Z ##[group]Removing auth
+2025-01-01T01:23:31.1469670Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-01-01T01:23:31.1497273Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-01-01T01:23:31.1720160Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-01-01T01:23:31.1739730Z http.https://github.com/.extraheader
+2025-01-01T01:23:31.1747863Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-01-01T01:23:31.1777271Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-01-01T01:23:31.1993890Z ##[endgroup]
+2025-01-01T01:23:31.2104530Z ##[group]Run brew install vale
+2025-01-01T01:23:31.2104815Z [36;1mbrew install vale[0m
+2025-01-01T01:23:31.2134156Z shell: /usr/bin/bash -xeuo pipefail {0}
+2025-01-01T01:23:31.2134417Z env:
+2025-01-01T01:23:31.2134591Z   HOMEBREW_DEVELOPER: 1
+2025-01-01T01:23:31.2134806Z   HOMEBREW_NO_AUTO_UPDATE: 1
+2025-01-01T01:23:31.2135017Z   HOMEBREW_NO_ENV_HINTS: 1
+2025-01-01T01:23:31.2135216Z   HOMEBREW_BOOTSNAP: 1
+2025-01-01T01:23:31.2135413Z   HOMEBREW_NO_INSTALL_CLEANUP: 1
+2025-01-01T01:23:31.2135630Z   HOMEBREW_NO_INSTALL_FROM_API: 
+2025-01-01T01:23:31.2136120Z   HOMEBREW_GITHUB_API_TOKEN: ***
+2025-01-01T01:23:31.2136349Z ##[endgroup]
+2025-01-01T01:23:31.2203545Z + brew install vale
+2025-01-01T01:23:33.1494019Z [34m==>[0m [1mDownloading https://ghcr.io/v2/homebrew/core/vale/manifests/3.9.2[0m
+2025-01-01T01:23:33.3024137Z [32m==>[0m [1mFetching [32mvale[39m[0m
+2025-01-01T01:23:33.3033404Z [34m==>[0m [1mDownloading https://ghcr.io/v2/homebrew/core/vale/blobs/sha256:bdb0a35496c0bbab5a0d03a2a1596912b67c5c48b8a64d85c958274c3c965671[0m
+2025-01-01T01:23:33.6064149Z [34m==>[0m [1mPouring vale--3.9.2.x86_64_linux.bottle.tar.gz[0m
+2025-01-01T01:23:34.7808538Z 🍺  /home/linuxbrew/.linuxbrew/Cellar/vale/3.9.2: 6 files, 41MB
+2025-01-01T01:23:34.8245336Z ##[group]Run # Avoid failing on broken symlinks.
+2025-01-01T01:23:34.8245702Z [36;1m# Avoid failing on broken symlinks.[0m
+2025-01-01T01:23:34.8246034Z [36;1mrm Library/Homebrew/os/mac/pkgconfig/fuse/fuse.pc[0m
+2025-01-01T01:23:34.8246397Z [36;1mrm Library/Homebrew/os/mac/pkgconfig/fuse/osxfuse.pc[0m
+2025-01-01T01:23:34.8246705Z [36;1m[0m
+2025-01-01T01:23:34.8247002Z [36;1m# No ignore support (https://github.com/errata-ai/vale/issues/131).[0m
+2025-01-01T01:23:34.8247352Z [36;1mrm -r Library/Homebrew/vendor[0m
+2025-01-01T01:23:34.8274067Z shell: /usr/bin/bash -xeuo pipefail {0}
+2025-01-01T01:23:34.8274331Z env:
+2025-01-01T01:23:34.8274521Z   HOMEBREW_DEVELOPER: 1
+2025-01-01T01:23:34.8274731Z   HOMEBREW_NO_AUTO_UPDATE: 1
+2025-01-01T01:23:34.8274948Z   HOMEBREW_NO_ENV_HINTS: 1
+2025-01-01T01:23:34.8275148Z   HOMEBREW_BOOTSNAP: 1
+2025-01-01T01:23:34.8275341Z   HOMEBREW_NO_INSTALL_CLEANUP: 1
+2025-01-01T01:23:34.8275560Z   HOMEBREW_NO_INSTALL_FROM_API: 
+2025-01-01T01:23:34.8276060Z   HOMEBREW_GITHUB_API_TOKEN: ***
+2025-01-01T01:23:34.8276285Z ##[endgroup]
+2025-01-01T01:23:34.8321830Z + rm Library/Homebrew/os/mac/pkgconfig/fuse/fuse.pc
+2025-01-01T01:23:34.8332604Z + rm Library/Homebrew/os/mac/pkgconfig/fuse/osxfuse.pc
+2025-01-01T01:23:34.8343044Z + rm -r Library/Homebrew/vendor
+2025-01-01T01:23:34.8452549Z ##[group]Run vale docs/
+2025-01-01T01:23:34.8452777Z [36;1mvale docs/[0m
+2025-01-01T01:23:34.8476251Z shell: /usr/bin/bash -xeuo pipefail {0}
+2025-01-01T01:23:34.8476509Z env:
+2025-01-01T01:23:34.8476670Z   HOMEBREW_DEVELOPER: 1
+2025-01-01T01:23:34.8476876Z   HOMEBREW_NO_AUTO_UPDATE: 1
+2025-01-01T01:23:34.8477088Z   HOMEBREW_NO_ENV_HINTS: 1
+2025-01-01T01:23:34.8477441Z   HOMEBREW_BOOTSNAP: 1
+2025-01-01T01:23:34.8477637Z   HOMEBREW_NO_INSTALL_CLEANUP: 1
+2025-01-01T01:23:34.8477857Z   HOMEBREW_NO_INSTALL_FROM_API: 
+2025-01-01T01:23:34.8478263Z   HOMEBREW_GITHUB_API_TOKEN: ***
+2025-01-01T01:23:34.8478489Z ##[endgroup]
+2025-01-01T01:23:34.8520417Z + vale docs/
+2025-01-01T01:23:36.1865351Z ✔ [31m0 errors[0m, [33m0 warnings[0m and [34m0 suggestions[0m in 78 files.
+2025-01-01T01:23:36.1971760Z ##[group]Run ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+2025-01-01T01:23:36.1972139Z with:
+2025-01-01T01:23:36.1972317Z   bundler-cache: true
+2025-01-01T01:23:36.1972523Z   working-directory: docs
+2025-01-01T01:23:36.1972733Z   ruby-version: default
+2025-01-01T01:23:36.1972917Z env:
+2025-01-01T01:23:36.1973071Z   HOMEBREW_DEVELOPER: 1
+2025-01-01T01:23:36.1973266Z   HOMEBREW_NO_AUTO_UPDATE: 1
+2025-01-01T01:23:36.1973472Z   HOMEBREW_NO_ENV_HINTS: 1
+2025-01-01T01:23:36.1973671Z   HOMEBREW_BOOTSNAP: 1
+2025-01-01T01:23:36.1973883Z   HOMEBREW_NO_INSTALL_CLEANUP: 1
+2025-01-01T01:23:36.1974097Z   HOMEBREW_NO_INSTALL_FROM_API: 
+2025-01-01T01:23:36.1974711Z   HOMEBREW_GITHUB_API_TOKEN: ***
+2025-01-01T01:23:36.1974945Z ##[endgroup]
+2025-01-01T01:23:36.3140603Z Using 3.3.6 as input from file .ruby-version
+2025-01-01T01:23:36.3163227Z ##[group]Modifying PATH
+2025-01-01T01:23:36.3163613Z Entries added to PATH to use selected Ruby:
+2025-01-01T01:23:36.3164128Z   /opt/hostedtoolcache/Ruby/3.3.6/x64/bin
+2025-01-01T01:23:36.3164745Z ##[endgroup]
+2025-01-01T01:23:36.3190440Z ##[group]Downloading Ruby
+2025-01-01T01:23:36.3192573Z https://github.com/ruby/ruby-builder/releases/download/toolcache/ruby-3.3.6-ubuntu-24.04.tar.gz
+2025-01-01T01:23:36.5855640Z Took   0.27 seconds
+2025-01-01T01:23:36.5857274Z ##[endgroup]
+2025-01-01T01:23:36.5857824Z ##[group]Extracting  Ruby
+2025-01-01T01:23:36.5888786Z [command]/usr/bin/tar -xz -C /opt/hostedtoolcache/Ruby/3.3.6 -f /home/runner/work/_temp/b672f96d-ff7d-4b16-bae0-aa03f121045f
+2025-01-01T01:23:37.0250932Z Took   0.44 seconds
+2025-01-01T01:23:37.0251724Z ##[endgroup]
+2025-01-01T01:23:37.0252632Z ##[group]Print Ruby version
+2025-01-01T01:23:37.0271666Z [command]/opt/hostedtoolcache/Ruby/3.3.6/x64/bin/ruby --version
+2025-01-01T01:23:37.0436505Z ruby 3.3.6 (2024-11-05 revision 75015d4c1f) [x86_64-linux]
+2025-01-01T01:23:37.0452886Z Took   0.02 seconds
+2025-01-01T01:23:37.0453602Z ##[endgroup]
+2025-01-01T01:23:37.0454452Z ##[group]Installing Bundler
+2025-01-01T01:23:37.0458607Z Using Bundler 2 shipped with ruby-3.3.6
+2025-01-01T01:23:37.0459489Z Took   0.00 seconds
+2025-01-01T01:23:37.0460129Z ##[endgroup]
+2025-01-01T01:23:37.0460847Z > bundle install
+2025-01-01T01:23:37.0481380Z [command]/opt/hostedtoolcache/Ruby/3.3.6/x64/bin/bundle config --local path /home/runner/work/brew/brew/docs/vendor/bundle
+2025-01-01T01:23:37.1903969Z [command]/opt/hostedtoolcache/Ruby/3.3.6/x64/bin/bundle lock
+2025-01-01T01:23:39.2534245Z Fetching gem metadata from https://rubygems.org/...........
+2025-01-01T01:23:39.5198207Z Resolving dependencies...
+2025-01-01T01:23:40.5402608Z Writing lockfile to /home/runner/work/brew/brew/docs/Gemfile.lock
+2025-01-01T01:23:40.5714652Z Cache key: setup-ruby-bundler-cache-v6-ubuntu-24.04-x64-ruby-3.3.6-wd-/home/runner/work/brew/brew/docs-with--without--only--Gemfile.lock-8ac300c50ad0fe277f4c6a20efba30c996cf36cf4e7e77c426f4da25b7da23f1
+2025-01-01T01:23:40.8583483Z Cache Size: ~30 MB (31076409 B)
+2025-01-01T01:23:40.8609865Z [command]/usr/bin/tar -xf /home/runner/work/_temp/a78743e2-48c2-4ef5-bcbe-d4a724acaecd/cache.tzst -P -C /home/runner/work/brew/brew --use-compress-program unzstd
+2025-01-01T01:23:41.1633206Z Cache restored successfully
+2025-01-01T01:23:41.1698656Z Found cache for key: setup-ruby-bundler-cache-v6-ubuntu-24.04-x64-ruby-3.3.6-wd-/home/runner/work/brew/brew/docs-with--without--only--Gemfile.lock-e865d38c3bbcb30d2e7bc0f492aad730c32da81a069cfc2e4d56e00a66d13925
+2025-01-01T01:23:41.1714586Z [command]/opt/hostedtoolcache/Ruby/3.3.6/x64/bin/bundle install --jobs 4
+2025-01-01T01:23:41.6551670Z Received 31076409 of 31076409 (100.0%), 29.6 MBs/sec
+2025-01-01T01:23:42.8134621Z Fetching gem metadata from https://rubygems.org/.........
+2025-01-01T01:23:42.8463328Z Fetching bigdecimal 3.1.9
+2025-01-01T01:23:42.8468157Z Fetching logger 1.6.4
+2025-01-01T01:23:42.8684053Z Fetching securerandom 0.4.1
+2025-01-01T01:23:42.8700551Z Fetching json 2.9.1
+2025-01-01T01:23:42.9177700Z Installing securerandom 0.4.1
+2025-01-01T01:23:42.9193580Z Installing logger 1.6.4
+2025-01-01T01:23:42.9260328Z Installing json 2.9.1 with native extensions
+2025-01-01T01:23:42.9269468Z Fetching io-event 1.7.5
+2025-01-01T01:23:42.9289794Z Installing bigdecimal 3.1.9 with native extensions
+2025-01-01T01:23:42.9373637Z Fetching csv 3.3.2
+2025-01-01T01:23:42.9423903Z Installing io-event 1.7.5 with native extensions
+2025-01-01T01:23:42.9858191Z Installing csv 3.3.2
+2025-01-01T01:23:43.0335431Z Fetching ffi 1.17.1 (x86_64-linux-gnu)
+2025-01-01T01:23:43.0710134Z Installing ffi 1.17.1 (x86_64-linux-gnu)
+2025-01-01T01:23:43.1326884Z Fetching rexml 3.4.0
+2025-01-01T01:23:43.1423970Z Installing rexml 3.4.0
+2025-01-01T01:23:43.1740922Z Fetching chef-utils 18.6.2
+2025-01-01T01:23:43.1846634Z Installing chef-utils 18.6.2
+2025-01-01T01:23:43.1992446Z Fetching nokogiri 1.18.1 (x86_64-linux-gnu)
+2025-01-01T01:23:43.3973916Z Installing nokogiri 1.18.1 (x86_64-linux-gnu)
+2025-01-01T01:23:53.6805714Z Fetching activesupport 8.0.1
+2025-01-01T01:23:53.7037950Z Installing activesupport 8.0.1
+2025-01-01T01:23:53.7561316Z Bundle complete! 5 Gemfile dependencies, 121 gems now installed.
+2025-01-01T01:23:53.7562133Z Bundled gems are installed into `./vendor/bundle`
+2025-01-01T01:23:53.7564254Z 1 installed gem you directly depend on is looking for funding.
+2025-01-01T01:23:53.7564785Z   Run `bundle fund` for details
+2025-01-01T01:23:53.8018621Z [command]/opt/hostedtoolcache/Ruby/3.3.6/x64/bin/bundle clean
+2025-01-01T01:23:54.0436096Z Removing activesupport (8.0.0)
+2025-01-01T01:23:54.0586983Z Removing bigdecimal (3.1.8)
+2025-01-01T01:23:54.0598333Z Removing chef-utils (18.5.0)
+2025-01-01T01:23:54.0613343Z Removing csv (3.3.0)
+2025-01-01T01:23:54.0631591Z Removing ffi-1.17.0-x86_64-linux (gnu)
+2025-01-01T01:23:54.0713386Z Removing io-event (1.7.4)
+2025-01-01T01:23:54.0727988Z Removing json (2.9.0)
+2025-01-01T01:23:54.0747142Z Removing logger (1.6.2)
+2025-01-01T01:23:54.0752195Z Removing nokogiri-1.17.1-x86_64 (linux)
+2025-01-01T01:23:54.0844739Z Removing rexml (3.3.9)
+2025-01-01T01:23:54.0871653Z Removing securerandom (0.4.0)
+2025-01-01T01:23:54.0948868Z Saving cache
+2025-01-01T01:23:54.1079042Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/brew/brew --files-from manifest.txt --use-compress-program zstdmt
+2025-01-01T01:23:56.1616784Z Cache Size: ~30 MB (31254711 B)
+2025-01-01T01:23:56.2506220Z Cache saved successfully
+2025-01-01T01:23:56.2574929Z Took  19.21 seconds
+2025-01-01T01:23:56.2689990Z ##[group]Run bundle exec rake lint
+2025-01-01T01:23:56.2690514Z [36;1mbundle exec rake lint[0m
+2025-01-01T01:23:56.2729026Z shell: /usr/bin/bash -xeuo pipefail {0}
+2025-01-01T01:23:56.2729476Z env:
+2025-01-01T01:23:56.2729833Z   HOMEBREW_DEVELOPER: 1
+2025-01-01T01:23:56.2730210Z   HOMEBREW_NO_AUTO_UPDATE: 1
+2025-01-01T01:23:56.2730610Z   HOMEBREW_NO_ENV_HINTS: 1
+2025-01-01T01:23:56.2730975Z   HOMEBREW_BOOTSNAP: 1
+2025-01-01T01:23:56.2731537Z   HOMEBREW_NO_INSTALL_CLEANUP: 1
+2025-01-01T01:23:56.2731955Z   HOMEBREW_NO_INSTALL_FROM_API: 
+2025-01-01T01:23:56.2732721Z   HOMEBREW_GITHUB_API_TOKEN: ***
+2025-01-01T01:23:56.2733149Z ##[endgroup]
+2025-01-01T01:23:56.2790631Z + bundle exec rake lint
+2025-01-01T01:23:56.6046121Z mdl $(git ls-files '*.md' | grep -v 'Manpage.md')
+2025-01-01T01:23:57.6689706Z ##[group]Run brew style docs
+2025-01-01T01:23:57.6690186Z [36;1mbrew style docs[0m
+2025-01-01T01:23:57.6723313Z shell: /usr/bin/bash -xeuo pipefail {0}
+2025-01-01T01:23:57.6723584Z env:
+2025-01-01T01:23:57.6723760Z   HOMEBREW_DEVELOPER: 1
+2025-01-01T01:23:57.6723971Z   HOMEBREW_NO_AUTO_UPDATE: 1
+2025-01-01T01:23:57.6724178Z   HOMEBREW_NO_ENV_HINTS: 1
+2025-01-01T01:23:57.6724549Z   HOMEBREW_BOOTSNAP: 1
+2025-01-01T01:23:57.6724748Z   HOMEBREW_NO_INSTALL_CLEANUP: 1
+2025-01-01T01:23:57.6724971Z   HOMEBREW_NO_INSTALL_FROM_API: 
+2025-01-01T01:23:57.6725545Z   HOMEBREW_GITHUB_API_TOKEN: ***
+2025-01-01T01:23:57.6725965Z ##[endgroup]
+2025-01-01T01:23:57.6783191Z + brew style docs
+2025-01-01T01:23:58.1010764Z [34m==>[0m [1mInstalling 'bundler' gem[0m
+2025-01-01T01:24:01.0096578Z Fetching gem metadata from https://rubygems.org/.......
+2025-01-01T01:24:01.0130681Z Fetching public_suffix 6.0.1
+2025-01-01T01:24:01.0133888Z Fetching ast 2.4.2
+2025-01-01T01:24:01.0134306Z Fetching base64 0.2.0
+2025-01-01T01:24:01.0134641Z Fetching bindata 2.5.0
+2025-01-01T01:24:01.0759554Z Installing base64 0.2.0
+2025-01-01T01:24:01.0765647Z Installing ast 2.4.2
+2025-01-01T01:24:01.0844191Z Fetching concurrent-ruby 1.3.4
+2025-01-01T01:24:01.0856615Z Installing bindata 2.5.0
+2025-01-01T01:24:01.0891947Z Fetching json 2.9.1
+2025-01-01T01:24:01.0899087Z Installing public_suffix 6.0.1
+2025-01-01T01:24:01.1034802Z Installing json 2.9.1 with native extensions
+2025-01-01T01:24:01.1505200Z Fetching language_server-protocol 3.17.0.3
+2025-01-01T01:24:01.1672749Z Installing concurrent-ruby 1.3.4
+2025-01-01T01:24:01.1719863Z Installing language_server-protocol 3.17.0.3
+2025-01-01T01:24:01.2196250Z Fetching parallel 1.26.3
+2025-01-01T01:24:01.2265427Z Installing parallel 1.26.3
+2025-01-01T01:24:01.2332449Z Fetching racc 1.8.1
+2025-01-01T01:24:01.2455725Z Installing racc 1.8.1 with native extensions
+2025-01-01T01:24:01.3251724Z Fetching plist 3.7.2
+2025-01-01T01:24:01.3313312Z Installing plist 3.7.2
+2025-01-01T01:24:01.3395440Z Fetching rainbow 3.1.1
+2025-01-01T01:24:01.3448878Z Installing rainbow 3.1.1
+2025-01-01T01:24:01.3537748Z Fetching regexp_parser 2.10.0
+2025-01-01T01:24:01.3638705Z Installing regexp_parser 2.10.0
+2025-01-01T01:24:01.4036714Z Fetching ruby-progressbar 1.13.0
+2025-01-01T01:24:01.4109564Z Installing ruby-progressbar 1.13.0
+2025-01-01T01:24:01.4189010Z Fetching unicode-emoji 4.0.4
+2025-01-01T01:24:01.4276371Z Fetching ruby-macho 4.1.0
+2025-01-01T01:24:01.4304631Z Installing unicode-emoji 4.0.4
+2025-01-01T01:24:01.4349423Z Installing ruby-macho 4.1.0
+2025-01-01T01:24:01.4604647Z Fetching sorbet-runtime 0.5.11708
+2025-01-01T01:24:01.4762849Z Installing sorbet-runtime 0.5.11708
+2025-01-01T01:24:01.4920432Z Fetching warning 1.5.0
+2025-01-01T01:24:01.5067639Z Installing warning 1.5.0
+2025-01-01T01:24:01.5197012Z Fetching addressable 2.8.7
+2025-01-01T01:24:01.5369148Z Installing addressable 2.8.7
+2025-01-01T01:24:01.5842597Z Fetching elftools 1.3.1
+2025-01-01T01:24:01.6166752Z Fetching unicode-display_width 3.1.3
+2025-01-01T01:24:01.6179363Z Installing elftools 1.3.1
+2025-01-01T01:24:01.6240096Z Installing unicode-display_width 3.1.3
+2025-01-01T01:24:01.6380525Z Fetching patchelf 1.5.1
+2025-01-01T01:24:01.6457814Z Installing patchelf 1.5.1
+2025-01-01T01:24:02.1370788Z Fetching parser 3.3.6.0
+2025-01-01T01:24:02.1858589Z Installing parser 3.3.6.0
+2025-01-01T01:24:02.2685567Z Fetching rubocop-ast 1.37.0
+2025-01-01T01:24:02.2745414Z Installing rubocop-ast 1.37.0
+2025-01-01T01:24:05.7296372Z Fetching rubocop 1.69.2
+2025-01-01T01:24:05.7694344Z Installing rubocop 1.69.2
+2025-01-01T01:24:05.9177879Z Fetching rubocop-md 1.2.4
+2025-01-01T01:24:05.9179826Z Fetching rubocop-performance 1.23.0
+2025-01-01T01:24:05.9180312Z Fetching rubocop-rspec 3.3.0
+2025-01-01T01:24:05.9180729Z Fetching rubocop-sorbet 0.8.7
+2025-01-01T01:24:05.9264241Z Installing rubocop-md 1.2.4
+2025-01-01T01:24:05.9367634Z Installing rubocop-performance 1.23.0
+2025-01-01T01:24:05.9415592Z Installing rubocop-sorbet 0.8.7
+2025-01-01T01:24:05.9448713Z Installing rubocop-rspec 3.3.0
+2025-01-01T01:24:06.0117905Z Bundle complete! 39 Gemfile dependencies, 29 gems now installed.
+2025-01-01T01:24:06.0119058Z Bundled gems are installed into `../../../../linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/vendor/bundle`
+2025-01-01T01:24:11.8962368Z 
+2025-01-01T01:24:11.8963189Z 79 files inspected, [32mno offenses[0m detected
+2025-01-01T01:24:11.9267846Z ##[group]Run bundle exec rake test
+2025-01-01T01:24:11.9268148Z [36;1mbundle exec rake test[0m
+2025-01-01T01:24:11.9296634Z shell: /usr/bin/bash -xeuo pipefail {0}
+2025-01-01T01:24:11.9296903Z env:
+2025-01-01T01:24:11.9297078Z   HOMEBREW_DEVELOPER: 1
+2025-01-01T01:24:11.9297289Z   HOMEBREW_NO_AUTO_UPDATE: 1
+2025-01-01T01:24:11.9297511Z   HOMEBREW_NO_ENV_HINTS: 1
+2025-01-01T01:24:11.9297714Z   HOMEBREW_BOOTSNAP: 1
+2025-01-01T01:24:11.9297921Z   HOMEBREW_NO_INSTALL_CLEANUP: 1
+2025-01-01T01:24:11.9298151Z   HOMEBREW_NO_INSTALL_FROM_API: 
+2025-01-01T01:24:11.9298635Z   HOMEBREW_GITHUB_API_TOKEN: ***
+2025-01-01T01:24:11.9298978Z   JEKYLL_GITHUB_TOKEN: ***
+2025-01-01T01:24:11.9299186Z ##[endgroup]
+2025-01-01T01:24:11.9344362Z + bundle exec rake test
+2025-01-01T01:24:12.2309294Z jekyll build
+2025-01-01T01:24:12.8048105Z Configuration file: /home/runner/work/brew/brew/docs/_config.yml
+2025-01-01T01:24:12.9234379Z To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+2025-01-01T01:24:13.2177206Z             Source: /home/runner/work/brew/brew/docs
+2025-01-01T01:24:13.2177687Z        Destination: /home/runner/work/brew/brew/docs/_site
+2025-01-01T01:24:13.2178127Z  Incremental build: disabled. Enable with --incremental
+2025-01-01T01:24:13.2178505Z       Generating... 
+2025-01-01T01:24:13.2187997Z       Remote Theme: Using theme homebrew/brew.sh
+2025-01-01T01:24:15.1403541Z                     done in 1.923 seconds.
+2025-01-01T01:24:15.5586226Z  Auto-regeneration: disabled. Use --watch to enable.
+2025-01-01T01:24:15.5586868Z Running 3 checks (Images, Links, Scripts) in ["./_site"] on *.html files ...
+2025-01-01T01:24:15.5587259Z 
+2025-01-01T01:24:15.5587264Z 
+2025-01-01T01:24:15.9266744Z Checking 186 external links
+2025-01-01T01:24:23.1668064Z Checking 346 internal links
+2025-01-01T01:24:23.2212049Z Checking internal link hashes in 25 files
+2025-01-01T01:24:25.4336405Z Ran on 78 files!
+2025-01-01T01:24:25.4336651Z 
+2025-01-01T01:24:25.4336659Z 
+2025-01-01T01:24:25.4340826Z HTML-Proofer finished successfully.
+2025-01-01T01:24:25.5698464Z Post job cleanup.
+2025-01-01T01:24:25.6641025Z [command]/usr/bin/git version
+2025-01-01T01:24:25.6683635Z git version 2.47.1
+2025-01-01T01:24:25.6726102Z Temporarily overriding HOME='/home/runner/work/_temp/08232ae1-3e25-436d-8189-9d7395346343' before making global git config changes
+2025-01-01T01:24:25.6727408Z Adding repository directory to the temporary git global config as a safe directory
+2025-01-01T01:24:25.6732368Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/brew/brew
+2025-01-01T01:24:25.6767687Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-01-01T01:24:25.6800797Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-01-01T01:24:25.7029374Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-01-01T01:24:25.7059568Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-01-01T01:24:25.7388882Z Post job cleanup.
+2025-01-01T01:24:25.8439761Z [command]/bin/bash /home/runner/work/_actions/Homebrew/actions/master/setup-homebrew/post.sh false
+2025-01-01T01:24:25.8583874Z Cleaning up orphan processes
